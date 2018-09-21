@@ -65,7 +65,7 @@ const Contact = props => {
                       whitespace: true,
                     },
                   ],
-                })(<Input name="name" />)}
+                })(<Input name="name" required/>)}
               </FormItem>
               <FormItem label="E-mail">
                 {getFieldDecorator('email', {
@@ -77,7 +77,7 @@ const Contact = props => {
                       type: 'email',
                     },
                   ],
-                })(<Input name="email" />)}
+                })(<Input name="email" required/>)}
               </FormItem>
               <FormItem label="Phone">
                 {getFieldDecorator('phone', {
@@ -105,6 +105,7 @@ const Contact = props => {
                     name="message"
                     placeholder="Hi, I'd love to learn more about your matchmaking process!!"
                     autosize={{ minRows: 4, maxRows: 10 }}
+                    required
                   />
                 )}
               </FormItem>
