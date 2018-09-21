@@ -5,7 +5,7 @@ const Contact = () => (
     <div className="row">
       <div className="ten columns offset-1 text-center">
 				<h1>Contact Us</h1>
-				<form name="submitContact" netlify-honeypot="bot-field" action="/" netlify>
+				<form name="submitContact" method="POST" netlify-honeypot="bot-field" action="/" netlify>
 					<p className="none">
 						<label>Don’t fill this out: </label>
 						<input name="bot-field" />
@@ -24,7 +24,7 @@ const Contact = () => (
 					</p>
 					<p>
 						<label>Message: </label>
-						<textarea type="text" name="message" required/>
+						<textarea type="text" name="message" required></textarea>
 					</p>
 					<p>
 						<button type="submit">Send</button>
