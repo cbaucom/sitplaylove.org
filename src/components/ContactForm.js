@@ -18,13 +18,14 @@ const Contact = props => {
   }
 
   function handleSubmit(e) {
-    e.preventDefault()
     props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values)
         sendMessage(values)
       }
     })
+    
+    // e.preventDefault()
   }
 
   function sendMessage(values) {
@@ -34,12 +35,11 @@ const Contact = props => {
       body: encode({ 'form-name': 'contact', ...values }),
     })
       .then(() => {
-        console.log('Form submission success')
         navigate('/')
       })
       .catch(error => {
         console.error('Form submission error:', error)
-        this.handleNetworkError()
+        handleNetworkError()
       })
   }
 
@@ -103,7 +103,7 @@ const Contact = props => {
                 })(
                   <TextArea
                     name="message"
-                    placeholder="Autosize height with minimum and maximum number of lines"
+                    placeholder="Hi, I'd love to learn more about your matchmaking process!!"
                     autosize={{ minRows: 4, maxRows: 10 }}
                   />
                 )}
