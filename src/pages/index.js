@@ -7,7 +7,7 @@ import About from "../components/about";
 import Services from "../components/services";
 import TestimonialsBg from "../components/testimonials-bg";
 import Testimonials from "../components/testimonials";
-import Contact from "../components/contact";
+import Contact from "../components/ContactForm";
 import Footer from "../components/footer";
 
 const IndexPage = () => (
