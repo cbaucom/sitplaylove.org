@@ -985,6 +985,16 @@ body {
   background: #eee;
 }
 
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  /* Give app full page to work with */
+  height: 100vh;
+}
+
 a:hover,
 a:focus {
   color: #11abb0;
@@ -1163,6 +1173,87 @@ ul#nav li.current a {
   color: #fe1f81;
   border-bottom: 1px solid;
 }
+
+#App {
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  padding: 30px 0 !important;
+  color: #eee !important;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+@media only screen and (min-width: 767px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #eee;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #eee !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #E66FA4;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.5em;
+}
+
+.bm-menu-wrap {
+	width: 50% !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #E66FA4;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #eee;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -1753,7 +1844,7 @@ footer .social li:first-child {
     width: 48px;
     height: 48px;
     text-align: left;
-    background-color: #FF4D8F;
+    background-color: #E66FA4;
     position: relative;
     border: none;
     float: right;

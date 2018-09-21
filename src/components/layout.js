@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+// import Header from './header'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -38,8 +38,9 @@ const Layout = ({ children }) => (
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div
+          id="App"
           style={{
             margin: '0 auto',
           }}

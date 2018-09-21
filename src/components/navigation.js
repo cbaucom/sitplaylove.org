@@ -1,10 +1,11 @@
 import React from "react";
+import SideBar from "./sidebar";
 
 const Navigation = () => (
   <nav id="nav-wrap">
-    <a className="mobile-btn" href="#nav-wrap" />
+    <SideBar pageWrapId={"App"} outerContainerId={"nav-wrap"} />
     <ul id="nav" className="nav">
-      <li className="current">
+      <li className="">
         <a className="smoothscroll" href="#home">
           Home
         </a>
