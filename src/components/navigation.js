@@ -3,7 +3,7 @@ import SideBar from "./sidebar";
 
 const Navigation = () => (
   <nav id="nav-wrap">
-    <SideBar  />
+    <SideBar pageWrapId={"App"} outerContainerId={"nav-wrap"} />
     <ul id="nav" className="nav">
       <li className="">
         <a className="smoothscroll" href="#home">

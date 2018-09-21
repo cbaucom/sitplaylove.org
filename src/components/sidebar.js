@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { slide as Menu } from "react-burger-menu";
 
 class SideBar extends Component {
-	constructor() {
-    super();
+	constructor(props) {
+    super(props);
 		this.state = {
 			menuOpen: false
 		}
@@ -31,23 +31,23 @@ class SideBar extends Component {
 		return (
 			// Pass on our props
 			<Menu 
-				// {...props}
+				{...this.props}
 				isOpen={this.state.menuOpen}
 				onStateChange={(state) => this.handleStateChange(state)}
 			>
-				<a className="menu-item" href="#home">
+				<a className="menu-item" href="#home" onClick={this.handleClick}>
 					Home
 				</a>
 	
-				<a className="menu-item" href="#about">
+				<a className="menu-item" href="#about" onClick={this.handleClick}>
 					About
 				</a>
 	
-				<a className="menu-item" href="#testimonials">
+				<a className="menu-item" href="#testimonials" onClick={this.handleClick}>
 					Testimonials
 				</a>
 	
-				<a className="menu-item" href="#contact">
+				<a className="menu-item" href="#contact" onClick={this.handleClick}>
 					Contact
 				</a>
 			</Menu>

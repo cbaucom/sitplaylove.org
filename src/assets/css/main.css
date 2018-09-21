@@ -1214,7 +1214,7 @@ ul#nav li.current a {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #eee;
+  background: #11abb0;
 }
 
 /* Position and sizing of clickable cross button */
@@ -1236,7 +1236,7 @@ ul#nav li.current a {
 }
 
 .bm-menu-wrap {
-	width: 50% !important;
+	width: 100% !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
