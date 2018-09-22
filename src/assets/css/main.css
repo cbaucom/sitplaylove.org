@@ -1175,8 +1175,8 @@ ul#nav li.current a {
 }
 
 #App {
-  /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
+	overflow-y: scroll !important; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch !important;
 }
 
 /* Individual item */
