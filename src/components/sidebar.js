@@ -35,19 +35,19 @@ class SideBar extends Component {
 				isOpen={this.state.menuOpen}
 				onStateChange={(state) => this.handleStateChange(state)}
 			>
-				<a className="menu-item" href="#home" onClick={this.handleClick}>
+				<a className="menu-item" href="#home" onClick={() => this.closeMenu()}>
 					Home
 				</a>
 	
-				<a className="menu-item" href="#about" onClick={this.handleClick}>
+				<a className="menu-item" href="#about" onClick={() => this.closeMenu()}>
 					About
 				</a>
 	
-				<a className="menu-item" href="#testimonials" onClick={this.handleClick}>
+				<a className="menu-item" href="#testimonials" onClick={() => this.closeMenu()}>
 					Testimonials
 				</a>
 	
-				<a className="menu-item" href="#contact" onClick={this.handleClick}>
+				<a className="menu-item" href="#contact" onClick={() => this.closeMenu()}>
 					Contact
 				</a>
 			</Menu>
