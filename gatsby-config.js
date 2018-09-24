@@ -17,6 +17,13 @@ module.exports = {
         icon: 'src/images/sitplaylove-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-124163033-1",
+        head: true,
+      },
+    },
     'gatsby-plugin-offline',
   ],
 }
