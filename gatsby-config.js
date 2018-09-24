@@ -8,11 +8,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'sit-play-love-sarah-baucom',
+        name: 'Sit Play Love',
         short_name: 'sitplaylove',
         start_url: '/',
-        background_color: '#ffdaef',
-        theme_color: '#ffdaef',
+        background_color: '#E66FA4',
+        theme_color: '#E66FA4',
         display: 'minimal-ui',
         icon: 'src/images/sitplaylove-icon.png', // This path is relative to the root of the site.
       },

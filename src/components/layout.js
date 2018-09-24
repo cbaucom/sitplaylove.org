@@ -22,8 +22,10 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'SitPlayLove dog walking, dog training, and dog matchmaking' },
+            { name: 'keywords', content: 'dogs, walking, dog walking, dog training, sitplaylove, matchmaking' },
+            { name: 'msapplication-TileColor', content: '#E66FA4' },
+            { name: 'theme-color', content: '#E66FA4' },
           ]}
         >
           <html lang="en" />
