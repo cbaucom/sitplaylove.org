@@ -24,8 +24,6 @@ const Contact = props => {
         sendMessage(values)
       }
     })
-    
-    // e.preventDefault()
   }
 
   function sendMessage(values) {
