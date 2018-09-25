@@ -56,6 +56,20 @@ const Contact = props => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
+              <p className="none">
+                <label>Don’t fill this out: </label>
+                <input name="bot-field" />
+              </p>
+
+              <FormItem className="none">
+                {getFieldDecorator('name', {
+                  rules: [
+                    {
+                      whitespace: true,
+                    },
+                  ],
+                })(<Input name="name" required/>)}
+              </FormItem>
               <FormItem label="Name">
                 {getFieldDecorator('name', {
                   rules: [
