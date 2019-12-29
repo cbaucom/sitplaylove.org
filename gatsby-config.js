@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Sit Play Love',
-    description: 'SitPlayLove - Dog Trainer, Walker and Matchmaker Extraordinaire'
+    title: 'Sit Play Rescue',
+    description:
+      'SitPlayRescue - Dog Trainer, Walker and Matchmaker Extraordinaire',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Sit Play Love',
-        short_name: 'sitplaylove',
+        name: 'Sit Play Rescue',
+        short_name: 'sitplayrescue',
         start_url: '/',
         background_color: '#E66FA4',
         theme_color: '#E66FA4',
@@ -36,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-124163033-1",
+        trackingId: process.env.GA_ID,
         head: true,
       },
     },

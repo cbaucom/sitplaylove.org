@@ -1,5 +1,5 @@
 {
-  "name": "sit-play-love-sarah-baucom",
+  "name": "sit-play-rescue-sarah-baucom",
   "description": "Dog Trainer, Walker and Matchmaker Extraordinaire",
   "version": "1.0.0",
   "author": "Chris Baucom",
@@ -33,7 +33,7 @@
   "keywords": [
     "gatsby",
     "sarah baucom",
-    "sit play love",
+    "sit play rescue",
     "dogs"
   ],
   "license": "MIT",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/cbaucom/sitplayrescue.com"
   }
 }
